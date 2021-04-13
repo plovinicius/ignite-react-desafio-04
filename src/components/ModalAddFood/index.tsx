@@ -18,7 +18,6 @@ export function ModalAddFood(props: ModalAddFoodProps) {
   async function handleSubmit(data: any) {
     const { setIsOpen, handleAddFood } = props;
 
-    // TODO: ajustar funcao abaixo
     handleAddFood(data);
     setIsOpen();
   };

@@ -1,4 +1,3 @@
-import { ReactChildren, useState } from 'react';
 import ReactModal from 'react-modal';
 
 interface ModalProps {
@@ -7,20 +6,8 @@ interface ModalProps {
   children: any
 }
 
-interface ModalPrevProps {
-  isOpen: boolean
-}
-
 export function Modal(props: ModalProps) {
   const { isOpen, setIsOpen } = props;
-
-  // TODO: Ajustar a funcao abaixo
-  // function componentDidUpdate(prevProps: ModalPrevProps) {
-  //   if (prevProps.isOpen !== isOpen) {
-  //     // console.log(props)
-  //     setIsOpen(isOpen);
-  //   }
-  // }
 
   return (
     <ReactModal

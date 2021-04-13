@@ -16,7 +16,8 @@ interface Food {
   image: string,
   name: string,
   description: string,
-  price: string
+  price: string,
+  available?: boolean
 }
 
 export function Food(props: FoodProps) {

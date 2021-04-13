@@ -8,7 +8,7 @@ import { Input } from '../Input';
 interface ModalEditFoodProps {
   isOpen: boolean,
   setIsOpen: () => void,
-  editingFood: Record<string, any> | undefined,
+  editingFood: any,
   handleUpdateFood: (data: any) => void
 }
 
